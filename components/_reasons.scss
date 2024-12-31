@@ -1,0 +1,158 @@
+@import "./media.scss";
+
+
+.main_reasons{
+    margin-top: 285px;
+    position: relative;
+    overflow: hidden;
+    height: 900px;
+    @include desctop{
+        height: 260vh;
+    }
+    @include phone{
+        height: 230vh;
+    }
+}
+
+.main_reasons_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 280px;
+    max-width: 1166px;
+    margin: 0 auto;
+    @include desctop{
+        max-width: 980px;
+    }
+    @include tablet{
+        align-items: center;
+        gap: 80px;
+    }
+}
+
+.main_reasons_wrapper_content{
+    display: flex;
+}
+
+.main_reasons_wrapper_content_info_img{
+    position: absolute;
+    width: 480px;
+    height: 400px;
+    right: -8%;
+    top: 0;
+    @include tablet{
+        display: none;
+    }
+}
+
+.main_reasons_wrapper_content_info{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    @include phone{
+        gap: 40px;
+    }
+    .content_info_logo{
+        font-family: "Work Sans", serif;
+        font-size: 21px;
+        color: #2d2e06;
+        @include tablet{
+            text-align: center;
+        }
+    }
+    p{
+        font-family: "Work Sans", serif;
+        font-size: 15px;
+        color: #2d2e06;
+        max-width: 520px;
+        @include phone{
+            font-size: 12px;
+            margin-left: 10px;
+            max-width: 490px;
+        }
+    }
+}
+
+.main_reasons_wrapper_content_info_line{
+    position: absolute;
+    background-color: #2d2e06;
+    width: 640px;
+    height: 3px;
+    top: 35%;
+    left: -35%;
+    @include tablet{
+        width: 990px;
+        left: -45%;
+    }
+}
+
+.main_reasons_wrapper_content_inverse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content_info_inverse{
+    font-family: "Work Sans", serif;
+    font-size: 21px;
+    color: #2d2e06;
+    @include phone{
+        margin-left: 10px;
+    }
+}
+
+.main_reasons_wrapper_content_info_line_inverse{
+    position: absolute;
+    background-color: #2d2e06;
+    width: 700px;
+    height: 3px;
+    right: -36%;
+    top: 35%;
+    @include tablet{
+        width: 990px;
+        right: -45%;
+    }
+}
+
+.main_reasons_wrapper_content_info_img_inverse{
+    position: absolute;
+    width: 792px;
+    height: 500px;
+    top: 46%;
+    left:-20%;
+    @include desctop{
+        left: -30%;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+
+
+.adapt_first{
+    display: none;
+    @include tablet{
+        display: flex;
+        width: 792px;
+        height: 500px;
+        margin-left: -75%;
+    }
+    @include phone{
+        width: 500px;
+        height: 400px;
+        margin-left: -55%;
+    }
+}
+
+.adpat_second{
+    display: none;
+    @include tablet{
+        display: flex;
+        width: 480px;
+        height: 400px;
+        margin-right: -75%;
+    }
+    @include phone{
+        margin-right: -55%;
+    }
+}

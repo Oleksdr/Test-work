@@ -1,0 +1,87 @@
+@import "./media.scss";
+
+
+.main_interes{
+    padding-top: 230px;
+}
+
+.main_interes_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1166px;
+    @include desctop{
+        max-width: 980px;
+    }
+    @include tablet{
+        padding: 0 15px 0 15px;
+        align-items: center;
+    }
+    .interes_logo{
+        font-family: "Work Sans", serif;
+        font-size: 21px;
+        color: #2d2e06;
+    }
+}
+
+.main_interes_wrapper_assort{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.main_interes_wrapper_assort_item{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .assort_item_text{
+        font-family: "Work Sans", serif;
+        font-size: 21px;
+        color: #2d2e06;
+        @include tablet{
+            display: none;
+        }
+    }
+    .item_img{
+        width: 360px;
+        height: 630px;
+        @include desctop{
+            width: 300px;
+        }
+    }
+}
+
+.contact_img{
+    margin-top: 115px;
+    width: 350px;
+    height: 90px;
+}
+
+.main_interes_wrapper_img_content{
+    display: flex;
+    justify-content: flex-end;
+    .contact_img{
+        margin-top: 115px;
+        width: 350px;
+        height: 90px;
+    }
+}
+
+.text_adopt_tablet{
+    display: none;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        h2{
+            font-family: "Work Sans", serif;
+            font-size: 21px;
+            color: #2d2e06;
+        }
+    }
+}

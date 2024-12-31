@@ -1,0 +1,170 @@
+@import "./media.scss";
+
+
+
+.main_quality{
+    margin-top: 100px;
+}
+
+.main_quality_wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1166px;
+    margin: 0 auto;
+    position: relative;
+    @include desctop{
+        max-width: 980px;
+    }
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main_quality_wrappe_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include midlphone{
+        margin-left: 20px;
+    }
+    h2{
+        font-family: "Work Sans", serif;
+        font-size: 21px;
+        color: #2d2e06;
+    }
+}
+
+.main_quality_wrappe_info_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+    max-width: 420px;
+    @include midlphone{
+        max-width: 390px;
+    }
+    p{
+        font-family: "Work Sans", serif;
+        font-size: 15px;
+        color: #2d2e06;
+        @include midlphone{
+            font-size: 12px;
+        }
+    }
+}
+
+
+.main_quality_wrappe_info_price{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 80px;
+}
+
+
+.main_quality_wrappe_info_price_compare{
+    display: flex;
+    gap: 30px;
+}
+
+.main_quality_wrappe_info_price_compare_new{
+    display: flex;
+    gap: 5px;
+}
+
+.dollar{
+    font-family: "Work Sans", serif;
+    font-size: 31px;
+    color: #2d2e06;
+    font-weight: 600;
+}
+
+.new_prise{
+    font-family: "Work Sans", serif;
+    font-size: 55px;
+    color: #2d2e06;
+    font-weight: 600;
+}
+
+.main_quality_wrappe_info_price_compare_new_old{
+    display: flex;
+    gap: 7px;
+    position: relative;
+}
+
+.word{
+    font-family: "Work Sans", serif;
+    font-size: 21px;
+    color: #2d2e06;
+}
+
+.old_price{
+    font-family: "Work Sans", serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2d2e06;
+}
+
+
+.main_quality_wrappe_info_price_compare_new_old_line{
+    position: absolute;
+    background-color: #b7a68b;
+    width: 55px;
+    height: 3px;
+    right: -5px;
+    top: 20%;
+}
+
+.main_quality_wrappe_info_save{
+    margin-top: 20px;
+    max-width: 280px;
+    font-family: "Work Sans", serif;
+    font-size: 21px;
+    color: #2d2e06;
+    span{
+        font-weight: 600;
+    }
+}
+
+
+.main_quality_wrapper_image{
+    display: block;
+    width: 460px;
+    height: 600px;
+    @include phone{
+        width: 360px;
+    }
+    @include smalphone{
+        width: 290px;
+    }
+}
+
+
+
+
+.main_quality_wrapper_image_absolute{
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    bottom: -25%;
+    right: 43%;
+    @include desctop{
+        right: 50%;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+
+.quality_img_adapt{
+    display: none;
+    @include tablet{
+        display: flex;
+        width: 250px;
+        height: 230px;
+        margin-top: 45px;
+        margin-bottom: 40px;
+    }
+}

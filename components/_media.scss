@@ -1,0 +1,44 @@
+@mixin midldesctop(){
+    @media(max-width:1520px){
+        @content
+    }
+};
+
+
+
+@mixin desctop(){
+    @media(max-width:1210px){
+        @content
+    }
+};
+
+@mixin tablet(){
+    @media(max-width:1020px){
+        @content
+    }
+};
+
+
+@mixin smaltablet(){
+    @media(max-width:730px){
+        @content
+    }
+};
+
+@mixin phone(){
+    @media(max-width:560px){
+        @content
+    }
+};
+
+@mixin midlphone(){
+    @media(max-width:440px){
+        @content
+    }
+};
+
+@mixin smalphone(){
+    @media(max-width:375px){
+        @content
+    }
+};

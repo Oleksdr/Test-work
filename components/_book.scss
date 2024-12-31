@@ -1,0 +1,67 @@
+@import "./media.scss";
+
+.main_book{
+    margin-top: 220px;
+}
+
+.main_book_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1166px;
+    @include desctop{
+        max-width: 980px;
+    }
+    @include tablet{
+        padding: 0 15px 0 15px;
+    }
+    h2{
+        font-family: "Work Sans", serif;
+        font-size: 21px;
+        color: #2d2e06;
+    }
+    .book_img{
+        width: 1340px;
+        height: 680px;
+        margin-top: 80px;
+        margin-left: -180px;
+        @include midldesctop{
+            width: 100%;
+            margin-left: 0;
+        }
+        @include phone{
+            height: 500px;
+        }
+    }
+}
+
+.main_book_wrapper_contact{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+        gap: 25px;
+    }
+   .button_img{
+        width: 220px;
+        height: 70px;
+        cursor: pointer;
+   }
+}
+
+.main_book_wrapper_contact_lists{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    ul{
+        li{
+            font-family: "Work Sans", serif;
+            font-size: 15px;
+            color: #2d2e06;
+            @include midlphone{
+                font-size: 12px;
+            }
+        }
+    }
+}
